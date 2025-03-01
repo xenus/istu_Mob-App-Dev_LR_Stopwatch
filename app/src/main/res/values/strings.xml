@@ -3,4 +3,6 @@
     <string name="start">Start</string>
     <string name="pause">Pause</string>
     <string name="reset">Reset</string>
+    <string name="resume">Resume</string>
+    <string name="_00_00_00">00:00:00</string>
 </resources>
