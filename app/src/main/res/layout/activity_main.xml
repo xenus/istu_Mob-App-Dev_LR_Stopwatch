@@ -13,20 +13,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="56sp"/>
-    <Button
-        android:id="@+id/start_button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start"/>
-    <Button
-        android:id="@+id/pause_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pause"/>
-    <Button
-        android:id="@+id/reset_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset"/>
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/start_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"/>
+        <Button
+            android:id="@+id/pause_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"/>
+        <Button
+            android:id="@+id/reset_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"/>
+    </LinearLayout>
+    <com.example.stopwatch.AnalogStopwatchView
+        android:id="@+id/analogStopwatch"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
